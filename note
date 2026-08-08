@@ -15,3 +15,5 @@ LSTM - (Long Short Term Memory)
 
             gate value = 0 --> gate is closed
             gate value = 1 --> gate is open
+
+going on...
