@@ -15,5 +15,6 @@ LSTM - (Long Short Term Memory)
 
             gate value = 0 --> gate is closed
             gate value = 1 --> gate is open
-
+CNN 
+	convential neural network
 going on...
