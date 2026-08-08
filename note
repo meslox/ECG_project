@@ -1,0 +1,17 @@
+LSTM - (Long Short Term Memory)
+    Artificail neural network designed to process data that comes in a sequence
+
+    RNN - Recurrent Neural network
+    RNN + internal state => LSTM
+
+    State  ---- > LSTM cell
+                    |----->  forget gate , input gate , output gate
+
+            forget gate - says what sort  of state information stored in this internal state
+            input gate  - new information add or update to the working storage state information
+            output gate -  which part of the information is to the output
+
+            gate value --> 0 or 1
+
+            gate value = 0 --> gate is closed
+            gate value = 1 --> gate is open
