@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 project_root = Path(__file__).resolve().parent.parent
 dataset_dir = project_root / "mit-bih-arrhythmia-database-1.0.0"
-record_name = "200"
+record_name = "101"
 
 
 def plot(record, duration):
@@ -77,7 +77,7 @@ def main():
     print(f"LOADING Record = {record_name}")
     record, annotation = load_record(record_name)
     print_record(record, annotation)
-    # plot(record, duration=10)
+    plot(record, duration=10)
 
 
 if __name__ == "__main__":

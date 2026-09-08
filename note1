@@ -1,0 +1,12 @@
+100.atr -- it contain annotation data
+annotation is label for the dataset
+
+100.dat -- it contain the actual ecg data
+100.hea -- it conatin information about the recording
+
+2 channels -- channel 0 = MLII
+              channel 1 = V5
+
+annotation symbols
+    N - normal beat
+    A - atrial premature beat

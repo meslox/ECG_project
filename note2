@@ -1,0 +1,55 @@
+# this note contain the level of building the model
+
+                MIT-BIH records
+                    │
+                    ▼
+                Load ECG (MLII)
+                    │
+                    ▼
+                Preprocess ECG
+                    │
+                    ├── Baseline-wander removal
+                    ├── Low-pass filtering
+                    ├── 50 Hz notch filtering
+                    └── Normalization
+                    │
+                    ▼
+                Detect / use annotated R-peaks
+                    │
+                    ▼
+                Segment individual heartbeats
+                    │
+                    ▼
+                Assign annotation labels
+                    │
+                    ▼
+                Create X and y
+                    │
+                    ▼
+                Patient/record-level train/validation/test split
+                    │
+                    ▼
+                Balance training data if necessary
+                    │
+                    ▼
+                Save processed dataset
+                    │
+                    ├───────────────┐
+                    ▼               ▼
+                1D CNN        CNN + LSTM
+                baseline         final model
+                    │               │
+                    └───────┬───────┘
+                            ▼
+                        Evaluation
+
+phase -1  ✅
+    set the enviroment  and collect the dataset
+
+phase -2 ✅
+    Loading the data from the dataset and basic visualization
+
+phase - 3
+    ECG processing
+
+

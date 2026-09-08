@@ -1,0 +1,57 @@
+Phase-3 | ECG processing
+
+    main processess
+        1.Baseline-wander removal
+        2.Low-pass filtering
+        3.50 Hz notch filtering
+        4.Normalization
+
+    data_preparation/preprocess.py
+        Raw MLII ecg -----> filtered ecg
+
+    1.Baseline-wander removal
+        Real ECG signals can slowly move up and down because of:
+            *respiration
+            *electrode movement
+            *body movement
+            *electrode contact changes
+
+    2.Low-pass filtering
+        *High frequency noise can be present in ecgs
+        *Low-pass filter allows the important ecg frequency component  through it while reducing the            unwanted high frequency noise
+
+    3.50 Hz notch filtering
+        *for India , electric main frequency is 50Hz
+        * it will interfrence this
+
+    4.Normalization
+        *The neural network generally benefits from a consistent input scale.
+
+
+    *After preprocessing, we need to turn the continuous ECG for each sample annotation matching
+    *that became the supervised-learing dataset
+        X = ECG heartbeat waveform
+        y = heartbeat class
+
+
+    first we going to 1d CNN not CNN + LSTM
+        1d CNN take as baseline performance to compare the CNN+LSTM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

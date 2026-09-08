@@ -1,0 +1,95 @@
+{
+    "dataset": "Validation",
+    "model": "/home/sreenandh/final_year_project/model/saved_models/best_cnn_lstm.keras",
+    "num_samples": 9969,
+    "accuracy": 0.7349784331427425,
+    "macro_precision": 0.23029748278835158,
+    "macro_recall": 0.27408958286477386,
+    "macro_f1": 0.23056117847811128,
+    "weighted_precision": 0.8691921902006177,
+    "weighted_recall": 0.7349784331427425,
+    "weighted_f1": 0.786281302925872,
+    "classes": {
+        "N": {
+            "precision": 0.9459162663006178,
+            "recall": 0.7652415324819545,
+            "f1_score": 0.8460405156537754,
+            "support": 9005
+        },
+        "S": {
+            "precision": 0.010548523206751054,
+            "recall": 0.02512562814070352,
+            "f1_score": 0.014858841010401188,
+            "support": 199
+        },
+        "V": {
+            "precision": 0.19502262443438914,
+            "recall": 0.5800807537012113,
+            "f1_score": 0.29190653572638,
+            "support": 743
+        },
+        "F": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 20
+        },
+        "Q": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "support": 2
+        }
+    },
+    "confusion_matrix": [
+        [
+            6891,
+            464,
+            1650,
+            0,
+            0
+        ],
+        [
+            84,
+            5,
+            110,
+            0,
+            0
+        ],
+        [
+            307,
+            5,
+            431,
+            0,
+            0
+        ],
+        [
+            3,
+            0,
+            17,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            2,
+            0,
+            0
+        ]
+    ],
+    "actual_class_counts": {
+        "N": 9005,
+        "S": 199,
+        "V": 743,
+        "F": 20,
+        "Q": 2
+    },
+    "predicted_class_counts": {
+        "N": 7285,
+        "S": 474,
+        "V": 2210,
+        "F": 0,
+        "Q": 0
+    }
+}
